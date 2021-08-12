@@ -21,3 +21,10 @@ const question4 = {
   answer: 'in 2018',
   correctAnswer: 'in 2018'
 }
+
+let a;
+
+if (a == 0) {
+  console.log('Верно');
+}
+console.log ('Неверно');
