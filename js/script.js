@@ -1,23 +1,47 @@
-const question1 = {
+const q1 = {
   question: 'What is the date today?',
-  answer: '20/08/2021',
-  correctAnswer: '12/08/2021'
+  answer: {
+    a: 'July 2nd',
+    b: 'July 4th',
+    c: 'August 15th'
+  },
+  correctAnswer: 'c',
+
 }
 
-const question2 = {
+console.log(question1.answer.c === question1.answer[question1.correctAnswer]); //true
+console.log(question1.answer.b === question1.answer[question1.correctAnswer]) ; //false
+
+const q2 = {
   question: 'What day is today?',
-  answer: 'Monday',
-  correctAnswer: 'Thursday'
+  answer: {
+    a: 'Monday',
+    b: 'Friday',
+    c: 'Sunday'
+  },
+  correctAnswer: 'b'
 }
 
-const question3 = {
-  question: 'What city is the capital of Brasil?',
-  answer: 'Rio',
-  correctAnswer: 'Brasilia'
+const q3 = {
+  question: '2 + 2 = ?',
+  answer: {
+    a: '7',
+    b: '5',
+    c: '4'
+  },
+  correctAnswer: 'c'
 }
 
-const question4 = {
-  question: 'When was the last FIFA championshit',
-  answer: 'in 2018',
-  correctAnswer: 'in 2018'
+const q4 = {
+  question: 'When was the last FIFA championship?',
+  answer: {
+    a: 'in 2018',
+    b: 'in 2017',
+    c: 'this year'
+  },
+  correctAnswer: 'a'
 }
+
+const arr = [q1, q2, q3, q4];
+
+arr.filter(a => a.answer.c === a.answer[a.correctAnswer]).forEach(a => console.log(a.answer[a.correctAnswer]));
