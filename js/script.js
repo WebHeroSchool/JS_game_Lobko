@@ -5,12 +5,8 @@ const q1 = {
     b: 'July 4th',
     c: 'August 15th'
   },
-  correctAnswer: 'c',
-
+  correctAnswer: 'c'
 }
-
-console.log(question1.answer.c === question1.answer[question1.correctAnswer]); //true
-console.log(question1.answer.b === question1.answer[question1.correctAnswer]) ; //false
 
 const q2 = {
   question: 'What day is today?',
