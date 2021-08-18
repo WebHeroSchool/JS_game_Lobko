@@ -1,9 +1,9 @@
 const q1 = {
   question: 'What is the date today?',
   answer: {
-    a: 'July 2nd',
-    b: 'July 4th',
-    c: 'August 15th'
+    a: 'a) July 2nd',
+    b: 'b) July 4th',
+    c: 'c) August 15th'
   },
   correctAnswer: 'c'
 }
@@ -11,9 +11,9 @@ const q1 = {
 const q2 = {
   question: 'What day is today?',
   answer: {
-    a: 'Monday',
-    b: 'Friday',
-    c: 'Sunday'
+    a: 'a) Monday',
+    b: 'b) Friday',
+    c: 'c) Sunday'
   },
   correctAnswer: 'b'
 }
@@ -21,9 +21,9 @@ const q2 = {
 const q3 = {
   question: '2 + 2 = ?',
   answer: {
-    a: '7',
-    b: '5',
-    c: '4'
+    a: 'a) 7',
+    b: 'b) 5',
+    c: 'c) 4'
   },
   correctAnswer: 'c'
 }
@@ -31,9 +31,9 @@ const q3 = {
 const q4 = {
   question: 'When was the last FIFA championship?',
   answer: {
-    a: 'in 2018',
-    b: 'in 2017',
-    c: 'this year'
+    a: 'a) in 2018',
+    b: 'b) in 2017',
+    c: 'c) this year'
   },
   correctAnswer: 'a'
 }
