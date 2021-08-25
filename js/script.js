@@ -25,7 +25,7 @@ const q3 = {
     b: 'b) 5',
     c: 'c) 4'
   },
-  correctAnswer: 'c'
+  correctAnswer: 'c
 }
 
 const q4 = {
@@ -40,4 +40,20 @@ const q4 = {
 
 const arr = [q1, q2, q3, q4];
 
-arr.filter(a => a.answer.c === a.answer[a.correctAnswer]).forEach(a => console.log(a.answer[a.correctAnswer]));
+let i, cor = 0,
+    inc = 0;
+
+for (i = 0; i < arr.length; i++) {
+  const userAnswer = prompt(arr[i].question + '\n' + Object.values(arr[i].answer));
+  if (userAnswer === arr[i].correctAnswer) {
+    console.log('Great!You are correct!');
+    cor++;
+  } else {
+    console.log('Woops! Try again next time!');
+    inc++;
+  }
+}
+
+console.log("You have had " + cor + " correct answers and " + inc + " incorrect answers");
+
+// arr.filter(a => a.answer.c === a.answer[a.correctAnswer]).forEach(a => console.log(a.answer[a.correctAnswer]));
