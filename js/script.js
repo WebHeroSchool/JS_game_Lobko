@@ -40,20 +40,27 @@ const q4 = {
 
 const arr = [q1, q2, q3, q4];
 
-let i, cor = 0,
-    inc = 0;
+let i, correctAnswer = 0;
+
+let userAnswer = [];
+
+alert('Посчитаем вместе!');
 
 for (i = 0; i < arr.length; i++) {
-  const userAnswer = prompt(arr[i].question + '\n' + Object.values(arr[i].answer));
-  if (userAnswer === arr[i].correctAnswer) {
-    console.log('Great!You are correct!');
-    cor++;
-  } else {
-    console.log('Woops! Try again next time!');
-    inc++;
+
+  let a = prompt(arr[i].question + '\n' + Object.values(arr[i].answer));
+  userAnswer.push(a);
+}
+
+function checkAnswer(a) {
+  for (i = 0; i < a.length; i++) {
+    if (a[i] === arr[i].correctAnswer) {
+      correctAnswer++;
+    }
   }
 }
 
-console.log("You have had " + cor + " correct answers and " + inc + " incorrect answers");
+checkAnswer(userAnswer);
 
-// arr.filter(a => a.answer.c === a.answer[a.correctAnswer]).forEach(a => console.log(a.answer[a.correctAnswer]));
+let p = document.getElementById('answer');
+p.innerHTML = ('Классно поиграли! У тебя ' + correctAnswer + ' правильных ответa.');
