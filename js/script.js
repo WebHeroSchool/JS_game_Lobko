@@ -25,7 +25,7 @@ const q3 = {
     b: 'b) 5',
     c: 'c) 4'
   },
-  correctAnswer: 'c
+  correctAnswer: 'c'
 }
 
 const q4 = {
